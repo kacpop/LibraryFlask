@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} Borrowed books info{% endblock %}
+{% block content %}
+<h1>Books borrowed from library:</h1>
+<table class="table table-striped">
+   <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Borrower</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in values %}
+    <tr>
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.title}}</td>
+      <td>{{item.surname}}</td>
+    </tr>
+  {% endfor %}
+     </tbody>
+  </table>
+{% endblock %}

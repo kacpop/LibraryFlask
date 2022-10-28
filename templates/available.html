@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} Available books info{% endblock %}
+{% block content %}
+<h1>Books available in library:</h1>
+<table class="table table-striped">
+   <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Year of publication</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for item in values %}
+    <tr>
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.title}}</td>
+      <td>{{item.author}}</td>
+      <td>{{item.year}}</td>
+    </tr>
+  {% endfor %}
+     </tbody>
+  </table>
+{% endblock %}

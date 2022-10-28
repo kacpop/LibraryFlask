@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} Home Page{% endblock %}
+{% block content %}
+<h1 class="text-center"> Home page of the library</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <image src="{{ url_for('static', filename='pobrane.png')}}">
+          </div>     
+        </div>
+    </div>
+</div>
+<p class="text-center">This is web application of library. It has few functions:</p>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Add book to the library. Required: title, author, year of publication</li>
+  <li class="list-group-item">Borrow a book. Required: title, the borrower's name</li>
+  <li class="list-group-item">Return a book. Required: title, the borrower's name</li>
+  <li class="list-group-item">Check available books</li>
+  <li class="list-group-item">Check borrowed books</li>
+</ul>
+{% endblock %}
