@@ -1,6 +1,7 @@
 # LibraryFlask
 
 LibraryFlask is a web application that has the same fuctionality that another project "Library_sys" on my github. 
+Aplication was developed on replit.com
 
 Home page:
 
